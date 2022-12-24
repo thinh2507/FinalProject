@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    tools:context=".activity.SignupActivity">
+
+    <ImageView android:id="@+id/btnBack"
+        android:clickable="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="start"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:tint="@color/blue" />
+
+    <ImageView android:id="@+id/img_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/app_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="0dp">
+
+        <TextView android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="20dp"
+            android:textSize="32sp"/>
+
+        <EditText android:id="@+id/etSignName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/bg_email_edittext"
+            android:drawableLeft="@drawable/ic_profile"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:drawableTint="@color/blue"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:hint="Họ và tên"/>
+
+        <EditText android:id="@+id/etSignPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:background="@drawable/bg_email_edittext"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/blue"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:hint="Số điện thoại"/>
+
+        <EditText android:id="@+id/etSignMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bg_email_edittext"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/blue"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:hint="Email"/>
+
+        <EditText android:id="@+id/etSignPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_email_edittext"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:drawableTint="@color/blue"
+            android:hint="Mật khẩu"/>
+
+        <EditText android:id="@+id/etConfPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/bg_email_edittext"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:drawableTint="@color/blue"
+            android:hint="Nhập lại mật khẩu"/>
+
+        <Button android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng kí"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/blue"
+            />
+    </LinearLayout>
+
+</LinearLayout>
